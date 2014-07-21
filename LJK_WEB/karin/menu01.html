@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- Page Setting
+  	================================================== -->
+	<meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible" />
+	<meta charset="utf-8">
+	<title>部活紹介</title>
+
+	<!-- Viewport
+  	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  	================================================== -->
+	<link rel="stylesheet" href="css/setting.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+<div class="container">
+	<!-- ヘッダー部分 -->
+	<header class="mainHeader">
+		<div class="inner">
+			<div class="row">
+			<h1 class="logo"><a href="index.html">
+			<!-- サイト名を入力
+				================================================== -->
+				活動紹介
+			</a></h1>
+			<nav class="mainNav">
+			<!-- メニュー
+				================================================== -->
+				<ul>
+					<li><a href="index.html">ホーム</a></li>
+					<li><a href="menu01.html">活動紹介</a></li>
+					<li><a href="menu02.html">活動日程</a></li>
+					<!-- <li><a href="menu03.html">メニュー３</a></li> -->
+				</ul>
+			</nav>
+			</div>
+		</div>
+	</header>
+	<!-- コンテンツ部分 -->
+	<div class="content row clearfix">
+		<!-- サイドバー（左）部分 -->
+		<div class="mainSide grid-4">
+			<!-- TwiterやFacebookリンク
+				================================================== -->
+			<aside>
+				<h3>近況報告</h3>
+				<ul class="social">
+					<li><a href="#">Twitter Follow</a></li>
+					<li><a href="#">Facebook Fan</a></li>
+					<li><a href="#">Google+ Follow</a></li>
+				</ul>
+			</aside>
+			<aside>
+				<!-- 自己紹介
+					================================================== -->
+				<form>
+					<input type="button"value="秘密のページへ"onclick="checkpw()"
+				</form>
+			</aside>
+			<script type="text/javascript"><!--
+			function checkpw(){
+			var pswd=prompt("パスワードを入力して下さい:","");
+			location.href=pswd+".html";
+			}
+			//--></script>
+		</div>
+		<!-- メインコンテンツ（右）部分 -->
+		<div class="entryContent grid-8">
+			<div class="list grid-12">
+					<ul class="bxslider">
+					<!-- スライド画像
+						================================================== -->
+						<li>
+							<!--1枚目の画像-->
+							<img src="image1.jpg" height="428" width="640" alt="">
+						</li>
+						<li>
+							<!--2枚目の画像をここから入れるよ！-->
+							<img src="clubphoto.jpg" height="428" width="640" alt="">
+						</li>
+						<li>
+							<!--3枚目の画像をここから入れるよ！-->
+							<img src="image3.jpg" height="428" width="640" alt="">
+						</li>
+					</ul>
+					<!-- サイトの説明
+						================================================== -->
+					<h2>ようこそ！</h2>
+					<p>私達弓術部は、毎週火、水、金曜日の放課後に三田にある正己弓道場にて活動しています。</p>
+				</div>
+			<div class="list grid-12">
+					<!-- サイトの内容
+						================================================== -->
+					<section>
+					<h2>行事</h2>
+					<h3>　夏合宿</h3>
+					<p>今年は7/24(木)〜7/28(月),長野県白馬村やまいちみそらの弓道場にて合宿を行う予定です。<br>
+					新入部員の多くはこの夏合宿で的前に立ち、たっぷり時間が取れるこの期間に多くの時間を練習につぎ込み、帰る頃には初日と比べて格段に上手くなって三田に帰ります。</p></section>
+					<section>
+					<h3>　全早慶</h3>
+					<p>毎年夏に、早慶の高校生が集まって早慶戦を行っています。多い時には早慶それぞれ3校ずつ、合計6校集まるかなり大きな試合になります。</p>
+
+				    </section>
+				</div>
+		</div>
+	</div>
+	<foter class="mainFooter clearfix">
+			    	<p>Copyright(C)2014 keio girls J.Archery club All Rights Reserved.</P>
+			    	
+	</foter>
+	
+</div>
+<!-- スライダー -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<!-- ここにスライダーを追加 -->
+<script src="js/jquery.bxslider.js"></script>
+</body>
+</html>

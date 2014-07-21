@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=shift_jis" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta http-equiv="content-style-type" content="text/css" />
+<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+<title>入室ログイン</title>
+</head>
+<body>
+<div id="form">
+	<p class="form-ttl">Login</p>
+	<form action="!login_cgi!" method="post">
+	<input type="hidden" name="login" value="1" />
+	<p class="pass">Password<br /><input type="password" name="pw" value="!pw!" /></p>
+	<p class="check"><input type="checkbox" name="cook" value="1" />Remember me</p>
+	<p class="submit"><input type="submit" value="Login" /></p>
+	</form>
+</div>
+<script language="javascript">
+<!--
+self.document.forms[0].pw.focus();
+//-->
+</script>
+</body>
+</html>

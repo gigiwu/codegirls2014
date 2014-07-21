@@ -1,0 +1,180 @@
+/**
+  全体のCSSのCSS設定
+**/
+body {
+  font-family: Montserrat, "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+/**
+  リンクのCSS設定
+**/
+a {
+  text-decoration: none;
+  color: #777;
+}
+
+/**
+  リンクをマウスオーバーしたときのCSS設定
+**/
+a:hover {
+  color: #d49b94;
+}
+
+.container {
+  height: 100%;
+}
+
+/**
+  固定ヘッダーのCSS設定
+**/
+.mainHeader {
+  height: 100%;
+}
+
+.mainHeader .inner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 80px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.76);
+}
+
+/**
+  サイト名のCSS設定
+**/
+.mainHeader h1 {
+  float: left;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.mainHeader h1 img {
+  display: block;
+  float: left;
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+
+/**
+  メニューのCSS設定
+**/
+.mainHeader .mainNav ul {
+  float: right;
+  line-height: 80px;
+}
+
+.mainHeader .mainNav ul li {
+  float: left;
+}
+
+.mainHeader .mainNav ul li a {
+  display: block;
+  padding: 0 20px;
+}
+
+/**
+  ヘッダーのテキスト文のCSS設定
+**/
+.mainHeader .text {
+  display: table;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  max-width: 500px;
+  text-shadow: 0 1px 2px black;
+}
+
+/**
+  ヘッダーのタイトルのCSS設定
+**/
+.mainHeader .text h3 {
+  font-size: 3em;
+  margin: 0;
+  padding: 0 10px;
+  text-align: center;
+}
+
+/**
+  ヘッダーのテキストのCSS設定
+**/
+.mainHeader .text p {
+  font-size: 1.2em;
+  padding: 10px;
+  margin: 0;
+  border-top: 1px solid #fff
+}
+.mainCotent {
+  background: #fff;
+}
+/**
+  コンテンツのタイトルのCSS設定
+**/
+.content > h2 {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 40px 0;
+  text-align: center;
+}
+
+/**
+  コンテンツの横並びのCSS設定
+**/
+.content .list {
+  border-right: 1px solid #eee;
+  margin: 0 0 20px 0;
+  padding: 20px 40px 40px;
+}
+
+.content .list img {
+  width: 100%;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.content .list h2,
+.content .list p {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+コンテンツタイトルのCSS設定
+**/
+.content .list h2 {
+  margin: 20px 0;
+}
+
+.black {
+  background-color: #000;
+  color: #ddd;
+}
+
+.black a:link {
+  color: #fff;
+}
+
+.black .list {
+  border: 0 !important;
+}
+
+
+.mainFooter {
+  font-size: 12px;
+}
+
+.mainFooter p {
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #fff;
+}

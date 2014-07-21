@@ -1,0 +1,227 @@
+.ch-item {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: relative;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+	cursor: default;
+}
+
+.ch-info-wrap{
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+
+	-webkit-perspective: 800px;
+	-moz-perspective: 800px;
+	-o-perspective: 800px;
+	-ms-perspective: 800px;
+	perspective: 800px;
+
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+
+	top: 20px;
+	left: 20px;
+	background: #f9f9f9 url(../img/bg.jpg);
+	box-shadow: 
+		0 0 0 20px rgba(255,255,255,0.2), 
+		inset 0 0 3px rgba(255, 255, 255, 1);
+
+}
+
+.ch-info{
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+		
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+
+}
+
+.ch-info > div {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-position: center center;
+
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.ch-info .ch-info-back {
+	-webkit-transform: rotate3d(0,1,0,180deg);
+	-moz-transform: rotate3d(0,1,0,180deg);
+	-o-transform: rotate3d(0,1,0,180deg);
+	-ms-transform: rotate3d(0,1,0,180deg);
+	transform: rotate3d(0,1,0,180deg);
+	
+	background: #000;
+}
+
+
+.ch-img-1 { 
+	background-image: url(../img/ain.jpg);
+}
+
+.ch-img-2 { 
+	background-image: url(../img/dante.jpg);
+}
+.ch-img-3 { 
+	background-image: url(../img/da-.jpg);
+}
+.ch-img-4 { 
+	background-image: url(../img/chyap.jpg);
+}
+.ch-img-5 { 
+	background-image: url(../img/washi.jpg);
+}
+.ch-img-6 { 
+	background-image: url(../img/buda.jpg);
+}
+.ch-img-7 { 
+	background-image: url(../img/steve.jpg);
+}
+
+.ch-img-8 { 
+	background-image: url(../img/kera.jpg);
+}
+.ch-img-9 { 
+	background-image: url(../img/syeiku.jpg);
+}
+
+.ch-img-11 { 
+	background-image: url(../img/akuta.jpg);
+}
+
+.ch-img-12 { 
+	background-image: url(../img/maza.jpg);
+}
+.ch-img-13 { 
+	background-image: url(../img/jyupe.jpg);
+}
+.ch-img-14 { 
+	background-image: url(../img/natu.jpg);
+}
+.ch-img-15 { 
+	background-image: url(../img/coco.jpg);
+}
+.ch-img-16 { 
+	background-image: url(../img/gohho.jpg);
+}
+.ch-img-17 { 
+	background-image: url(../img/toru.jpg);
+}
+
+.ch-img-18 { 
+	background-image: url(../img/gete.jpg);
+}
+.ch-img-19 { 
+	background-image: url(../img/dazai.jpg);
+}
+
+.ch-img-21 { 
+	background-image: url(../img/cane.jpg);
+}
+
+.ch-img-22 { 
+	background-image: url(../img/ni-.jpg);
+}
+.ch-img-23 { 
+	background-image: url(../img/hami.jpg);
+}
+.ch-img-24 { 
+	background-image: url(../img/eji.jpg);
+}
+.ch-img-25 { 
+	background-image: url(../img/yukiti.jpg);
+}
+.ch-img-26 { 
+	background-image: url(../img/napo.jpg);
+}
+.ch-img-27 { 
+	background-image: url(../img/soku.jpg);
+}
+
+.ch-img-28 { 
+	background-image: url(../img/ruso-.jpg);
+}
+.ch-img-29 { 
+	background-image: url(../img/pikaso.jpg);
+}
+
+
+.ch-info h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 14px;
+	margin: 0 15px;
+	padding: 40px 0 0 0;
+	height: 90px;
+	font-family: Cambria, Georgia, serif;
+	text-shadow: 
+		0 0 1px #fff, 
+		0 1px 2px rgba(0,0,0,0.3);
+}
+
+.ch-info p {
+	color: #fff;
+	padding: 10px 5px;
+	font-style: italic;
+	margin: 0 30px;
+	font-size: 12px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+}
+
+.ch-info p a {
+	display: block;
+	color: #fff;
+	color: rgba(255,255,255,0.7);
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 9px;
+	letter-spacing: 1px;
+	padding-top: 4px;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.ch-info p a:hover {
+	color: #fff222;
+	color: rgba(255,242,34, 0.8);
+}
+
+.ch-item:hover .ch-info-wrap {
+	box-shadow: 
+		0 0 0 0 rgba(255,255,255,0.8), 
+		inset 0 0 3px rgba(255,255,255, 1);
+}
+
+.ch-item:hover .ch-info {
+	-webkit-transform: rotate3d(0,1,0,-180deg);
+	-moz-transform: rotate3d(0,1,0,-180deg);
+	-o-transform: rotate3d(0,1,0,-180deg);
+	-ms-transform: rotate3d(0,1,0,-180deg);
+	transform: rotate3d(0,1,0,-180deg);
+}
