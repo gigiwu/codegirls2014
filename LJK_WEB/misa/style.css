@@ -1,0 +1,199 @@
+﻿@charset UTF-8;
+
+
+/* ================================================ */
+/*             0 ここからサイト全体設定                */
+/* ================================================ */
+
+body {
+    font-size: 14px;
+    color: #333; 
+    background-color:#fff;
+    font-family: Verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}   
+
+/* ================================================ */
+/* 1 ここからヘッダーコンテンツ〜サイト上部の色付きの部分 */
+/* ================================================ */
+
+header {
+    /* -------　バーの背景色を変えてみよう [css01] ------- */
+    background-color: #00A975; 
+    /* ----------------------------------------------- */
+    background-image: -moz-linear-gradient(top,  rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 80%, rgba(255,255,255,0) 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.2)), color-stop(80%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,0)));
+    background-image: -webkit-linear-gradient(top,  rgba(255,255,255,0.2) 0%,rgba(255,255,255,0) 80%,rgba(255,255,255,0) 100%);
+    background-image: -o-linear-gradient(top,  rgba(255,255,255,0.2) 0%,rgba(255,255,255,0) 80%,rgba(255,255,255,0) 100%);
+    background-image: -ms-linear-gradient(top,  rgba(255,255,255,0.2) 0%,rgba(255,255,255,0) 80%,rgba(255,255,255,0) 100%);
+    background-image: linear-gradient(to bottom,  rgba(255,255,255,0.2) 0%,rgba(255,255,255,0) 80%,rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1affffff', endColorstr='#00ffffff',GradientType=0 );
+    border-bottom: 3px solid #777;
+    border-top: 1px solid rgba(255,255,255,0.6);
+    box-shadow: 0 1px 0 #fff, 0 -1px 0 rgba(0,0,0,0.4) inset;
+    height: 98px;
+}
+
+header h1 {
+    /* -----　タイトルの文字色を変えてみよう [css02] ----- */
+    color: #ccffcc;
+    /* ----------------------------------------------- */    
+    font-size: 2em;
+    text-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    line-height: 30px;
+    float: left;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 30px 0 0 0;  
+}
+
+a #sub {
+    font-size: 15px;
+}
+
+header #mainNav {
+    float: right;
+}
+
+header #mainNav li {
+    float: left;
+    margin:35px 0 0 20px;
+}
+header #mainNav li.current a,
+header #mainNav li:hover a {
+    border-radius: 5px;
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    text-decoration: none;
+}
+header #mainNav li a {
+    padding: 7px 14px 5px;
+    display: block;
+    color: #eee;
+    text-shadow: 0 1px 1px rgba(0,0,0,1);
+}
+
+/* ================================================ */
+/* 2 ここからメインコンテンツ〜サイト下部の画像・文章部分 */
+/* ================================================ */
+
+#main {
+    /* ---　サイトの背景色を変えてみよう [css03] --- */
+    background-color:#c4ff75 ;
+    /* --------------------------------------------- */    
+    overflow: hidden;
+}
+figure{
+    position: relative;
+    margin: auto;
+    border: 2px solid #fff;
+    width: 956px;
+    height: 640px;
+    margin: 30px auto; 
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+figure img {
+    max-width: 956px;
+    width: 956px;
+    height: 640px;
+    vertical-align: middle;
+}
+
+figure figcaption {
+    position: absolute;
+    bottom: 0;
+    padding: 10px 5px 7px;
+    border-top: 1px solid rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.3);
+    left: 0;
+    right: 2px;
+    color: #ddd;
+    text-shadow: 0 0 1px rgba(0,0,0,0.3);
+}
+section {
+    /* ---　記事の背景色を変えてみよう [css04] --- */
+    background: #75dfff;
+    /* --------------------------------------- */    
+    border: 1px solid #ddd;
+    margin: 20px auto;
+    box-shadow: 0 1px 0 #fff inset;
+    width: 960px;
+    padding: 20px 20px 10px;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+}
+section div.left{
+    float : left;
+}
+section h1 {
+    /* ---　記事タイトルの文字色/サイズを変えてみよう [css05] --- */
+    color: #414af6;
+    font-size: 30px;
+    /* ------------------------------------------------ */    
+    font-weight: bold;
+    padding: 15px 30px;
+    margin-bottom: 50px;
+    position: relative;
+    margin:-10px -21px 10px -31px;
+    border-radius: 5px 0 0 0 ;
+    border: 1px solid #ddd;
+    background-image: -webkit-linear-gradient(#eee, #e0e0e0);
+    background-image: -moz-linear-gradient(#eee, #e0e0e0);
+    background-image: -o-linear-gradient(#eee, #e0e0e0);
+    background-image: -ms-linear-gradient(#eee, #e0e0e0);
+    background-image: linear-gradient(#eee, #e0e0e0);
+}
+section h1:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    height: 0;
+    width: 0;
+    border: 5px solid transparent;
+    border-top: 5px solid #ddd;
+    left: 0;
+    border-right: 5px solid #ddd;
+}
+section p {
+    /* ---　記事内容の文字色/サイズを変えてみよう [css06] --- */
+    color: #fbfbfe
+
+    /* (自分で追加してみてね！) */
+
+    /* ------------------------------------------------ */    
+    line-height: 1.7em;
+    white-space: -moz-pre-wrap;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+}
+section img {
+    max-width: 915px;
+}
+
+/* ================================================ */
+/*      3 ここからフッター〜自分の著作権表示部分        */
+/* ================================================ */
+
+footer {
+    /* ---　フッターの文字色/サイズを変えてみよう [css07] --- */
+
+    /* ---------------------------------------- */    
+    border-top: 1px solid #d9d9d9;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+footer p{
+    color: #0000cd
+}
+
+/* --------------------- end ----------------------- */

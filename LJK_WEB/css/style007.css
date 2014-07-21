@@ -1,0 +1,272 @@
+/**
+  全体のCSSのCSS設定
+**/
+body {
+  font-family: Montserrat, "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  font-size: 16px;
+  color: #333;
+  width:100%;
+  height: 100%;
+  background-color: black;
+
+}
+
+
+/**
+  リンクのCSS設定
+**/
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/**
+  リンクをマウスオーバーしたときのCSS設定
+**/
+a:hover {
+  color: #d49b94;
+}
+
+.container {
+  height: 100%;
+}
+
+
+/**
+  固定ヘッダーのCSS設定
+**/
+.mainHeader {
+  height: 100%;
+  position: relative;
+
+}
+.mainCotent {
+background: rgba(0,0,0,0.95);
+position: absolute;
+width:100%;
+}
+
+.mainHeader .inner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 80px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+   z-index: 3;
+ /* background: #5f9ea0;*/
+}
+
+/**
+  サイト名のCSS設定
+**/
+.mainHeader h1 {
+  float: left;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.mainHeader h1 img {
+  display: block;
+  float: left;
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+
+/**
+  メニューのCSS設定
+**/
+.mainHeader .mainNav ul {
+  float: right;
+  line-height: 80px;
+}
+
+.mainHeader .mainNav ul li {
+  float: left;
+}
+
+.mainHeader .mainNav ul li a {
+  display: block;
+  padding: 0 20px;
+}
+/**
+  ヘッダーのテキスト文のCSS設定
+**/
+.mainHeader .text {
+  display: table;
+  margin: auto;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: rgba(255, 255, 255, 0);
+  max-width: 500px;
+  text-shadow: 0 1px 2px black;
+}
+
+/**
+  ヘッダーのタイトルのCSS設定
+**/
+.mainHeader .text h3 {
+  font-size: 3em;
+  margin: 0;
+  padding: 0 10px;
+  text-align: center;
+}
+
+/**
+  ヘッダーのテキストのCSS設定
+**/
+.mainHeader .text p {
+  text-align: center;
+  font-size: 1.2em;
+  padding: 10px;
+  margin: 0;
+  border-top: 1px solid #fff
+
+}
+.video {
+  z-index: 1;
+  position: relative;
+  height: 0;
+  padding: 30px 0 56.25%;
+  overflow: hidden;
+}
+.video iframe {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/**
+  コンテンツのタイトルのCSS設定
+**/
+.content > h2 {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 40px 0;
+  text-align: center;
+  color: white;
+}
+
+/**
+  コンテンツの横並びのCSS設定
+**/
+.content .list {
+  /*border-right: 1px rgba(0,0,0);*/
+  margin: 0 0 0 0;
+  padding: 20px 40px 40px;
+  position: relative;
+}
+
+.content .list img {
+  width: 100%;
+  display: block;
+  margin: 0 ;
+  position: relative;
+  z-index: 1;
+}
+
+
+figure {
+  position: relative;
+ /* width: 300px;*/
+  z-index: 1;
+  -webkit-perspective: 1500px;
+  perspective: 1500px;
+  -webkit-perspective-origin: 0 50%;
+  perspective-origin: 0 50%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+figure div {
+  overflow: hidden;
+}
+figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: rgba(0,0,0,.4);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-origin: 0;
+  transform-origin: 0;
+  -webkit-transform: rotateY(0);
+  transform: rotateY(0);
+  -webkit-transition: -webkit-transform .4s, opacity .1s .3s;
+  transition: transform .4s, opacity .1s .3s;
+  opacity: 1;
+}
+
+figcaption h2,{
+  font-style: bold;
+font-size: 1.8em;
+}
+figcaption p {
+  font-style: italic;
+  font-size: 1.0em;
+}
+
+figcaption h2,
+figcaption p {
+  text-align: center;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+  color:white;
+  opacity: 1;
+}
+figure:hover figcaption {
+  -webkit-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
+  -webkit-transition: -webkit-transform .4s, opacity .1s;
+  transition: transform .4s, opacity .1s;
+  opacity: 1;
+}
+figure:hover figcaption h2,
+figure:hover figcaption p {
+  -webkit-transition-delay: .4s;
+  transition-delay: .4s;
+  opacity: 1;
+}
+/**
+コンテンツタイトルのCSS設定
+**/
+.content .list h2 {
+  margin: 20px 0;
+}
+
+.black {
+  background-color: #000;
+  color: #ddd;
+}
+
+.black a:link {
+  color: #fff;
+}
+
+.black .list {
+  border: 0 !important;
+}
+
+
+.mainFooter {
+  font-size: 12px;
+}
+
+.mainFooter p {
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #fff;
+}
+

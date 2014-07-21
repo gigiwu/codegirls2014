@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- Page Setting
+		================================================== -->
+	<meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible" />
+	<meta charset="utf-8">
+	<title>レイアウト1</title>
+
+	<!-- Viewport
+		================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+		================================================== -->
+	<link rel="stylesheet" href="css/setting.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+<div class="container">
+<!-- ヘッダー部分 -->
+	<header class="mainHeader">
+		<div class="inner">
+			<div class="row">
+			<h1 class="logo"><a href="index.html">
+			<!-- サイト名を入力
+				================================================== -->
+				Tuiterukun!!
+			</a></h1>
+			<nav class="mainNav">
+			<!-- メニュー
+				================================================== -->
+				<ul>
+					<li><a href="index.html">ホーム</a></li>
+					<li><a href="menu1.html">メニュー１</a></li>
+					<li><a href="menu2.html">メニュー２</a></li>
+					<li><a href="menu3.html">メニュー３</a></li>
+				</ul>
+			</nav>
+			</div>
+		</div>
+		<!-- 画像上テキスト -->
+		<div class="text row">
+			<h3>The Traveller</h3>
+			<p>ようこそ！世界中を旅しよう！</p>
+		</div>
+		<ul class="bxslider">
+		<!-- スライド画像
+			================================================== -->
+			<li>
+				<!--1枚目の画像-->
+				<img class="image" src="img/fall.jpg" height="428" width="640" alt="">
+			</li>
+			<li>
+				<!--2枚目の画像をここから入れるよ！-->
+				<img class="image" src="img/road.jpg" height="428" width="640" alt="">
+			</li>
+			<li>
+				<!--3枚目の画像をここから入れるよ！-->
+				<img class="image" src="img/sea.jpg" height="428" width="640" alt="">
+			</li>
+		</ul>
+	
+	</header>
+<!-- メイン部分 -->
+<div class="mainCotent">
+	<div class="content row">
+		<!-- メニュー
+			================================================== -->
+		<h2>ようこそ！</h2>
+		<div class="list grid-4">
+			<!--ポイントの画像
+				================================================== -->
+
+		<figure>
+			<div><img src="img/road.jpg" height="100" width="70" alt=""></div>
+			<figcaption>
+				<h3></h3>
+				<p></p>
+			</figcaption>
+		</figure>
+
+		</div>
+		<div class="list grid-4">
+			<!--ポイントの画像
+				================================================== -->
+		<figure>
+			<div><img src="img/fall.jpg" height="100" width="70" alt=""></div>
+			<figcaption>
+				<h3></h3>
+				<p></p>
+			</figcaption>
+		</figure>
+
+		</div>
+
+		<div class="list grid-4">
+			<!--ポイントの画像
+				================================================== -->
+		<figure>
+
+			<div><img src="img/sea.jpg" height="100" width="70" alt=""></div>
+			<figcaption>
+				<h3></h3>
+				<p></p>
+			</figcaption>
+		</figure>
+
+		</div>
+
+	</div>
+	<div class="black">
+		<div class="content row">
+			<!-- サブコンテンツタイトル
+				================================================== -->
+			<div class="video">
+				<iframe src="//player.vimeo.com/video/93575669?autoplay=1&amp;loop=1" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			</div>
+			<h2>サブコンテンツ</h2>
+			<div class="list grid-12">
+				<!-- サブコンテンツ内容
+					================================================== -->
+				<p>何は前とうとうほんの表裏人というものの時が考えないた。<br>
+				何だか十一月で専攻心もましてその衰弱ますんだけに進みていでをはごろごろなったないから、全くには握っでしょならなある。<br>
+				ー <a href="http://www.aozora.gr.jp/cards/000148/card772.html" target="_blank">夏目漱石「私の個人主義」 原文(青空文庫)</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+<foter class="mainFooter" class="clearfix">
+	<p>2014 <a href="http://life-is-tech.com/" target="_blank">Life is Tech!</a>.</p>
+</foter>
+</div>
+
+<!-- 背景のドット -->		
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            var ctx,
+                balls = [];
+
+            var canvas = document.getElementById('mycanvas');
+            if (!canvas || !canvas.getContext) return false;
+            ctx = canvas.getContext('2d');
+
+            var Ball = function(x, y, r) {
+                this.x = x;
+                this.y = y;
+                this.r = r;
+                this.vx = rand(-10, 10);
+                this.vy = rand(-10, 10);
+                this.color = "rgba(" + 
+                             rand(0, 255) + "," + 
+                             rand(0, 255) + "," + 
+                             rand(0, 255) + "," + 
+                             Math.random() + 
+                             ")";
+                this.draw = function() {
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.r, 0, Math.PI*2);
+                    ctx.fillStyle = this.color;
+                    ctx.closePath();
+                    ctx.fill();
+                };
+                this.move = function() {
+                    if (this.x + this.r > canvas.width || this.x - this.r < 0) {
+                        this.vx = -this.vx;
+                    }
+                    if (this.y + this.r > canvas.height || this.y - this.r < 0) {
+                        this.vy = -this.vy;
+                    }
+                    this.x += this.vx;
+                    this.y += this.vy;
+                };
+            };
+
+            // var b = new Ball(100, 100, 30);
+            // b.draw();
+
+            function rand(min, max) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+
+            $('#mycanvas').click(function(e) {
+                var x = e.pageX - $(this).offset().left,
+                    y = e.pageY - $(this).offset().top,
+                    r = rand(5, 10);
+                
+                x = adjustPosition(x, r, canvas.width);
+                y = adjustPosition(y, r, canvas.height);
+                balls.push(new Ball(x, y, r));
+                // console.log(balls);
+            });
+
+            function adjustPosition(pos, r, max) {
+                if (pos - r < 0) {
+                    return r;
+                } else if (pos + r > max) {
+                    return max - r;
+                } else {
+                    return pos;
+                }
+            }
+
+            function clearStage() {
+                ctx.fillStyle = '#ecf0f1';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+            }
+
+            function update() {
+                clearStage();
+                for (var i = 0; i < balls.length; i++) {
+                    balls[i].draw();
+                    balls[i].move();
+                }
+                setTimeout(function() {
+                    update();
+                }, 30);
+            }
+
+            update();
+
+        });
+    </script>
+<!-- スライダー -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<!-- ここにスライダーを追加 -->
+<script src="js/jquery.bxslider.js"></script>
+</body>
+</html>
